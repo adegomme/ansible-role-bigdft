@@ -29,6 +29,7 @@
     src: "{{ bigdft_download.dest }}"
     dest: "{{ bigdft_code_folder }}"
     remote_src: true
+    creates: "{{ bigdft_topdir }}"
 
 - name: Create build dir
   file:
